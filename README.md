@@ -87,11 +87,6 @@ This project is production-ready and can be deployed on [Vercel](https://vercel.
 
 ---
 
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
----
 
 ## Acknowledgements
 
@@ -105,7 +100,7 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Author
 
-- [Your Name](https://github.com/your-username)
+- [Haarush](https://github.com/your-username)
 
 ---
 
