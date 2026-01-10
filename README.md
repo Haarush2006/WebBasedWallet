@@ -97,10 +97,7 @@ This project is production-ready and can be deployed on [Vercel](https://vercel.
 - [lucide-react](https://lucide.dev/)
 
 ---
-
-## Author
-
-- [Haarush](https://github.com/your-username)
+Created by Haarush, January 2026.
 
 ---
 
