@@ -20,10 +20,10 @@ export default function wallet() {
 
 
 
-
-useEffect(() => {
-  const storedMnemonic = localStorage.getItem("mnemonic");
-  const storedIndices = localStorage.getItem("accountIndices");
+  
+  useEffect(() => {
+    const storedMnemonic = localStorage.getItem("mnemonic");
+    const storedIndices = localStorage.getItem("accountIndices");
 
   if (storedMnemonic) setmnemonic(storedMnemonic);
   if (storedIndices) setAccountIndices(JSON.parse(storedIndices));

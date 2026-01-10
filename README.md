@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web-Based Wallet (Solana HD Wallet)
+
+[Live Demo](https://web-based-wallet-web3.vercel.app/)
+
+A modern, secure, and user-friendly web-based wallet for the Solana blockchain. Built with Next.js, React, and Tailwind CSS, this wallet allows users to generate, import, and manage multiple Solana accounts using a single mnemonic phrase (HD wallet). All sensitive data is stored locally in the browser for maximum privacy.
+
+---
+
+## Features
+
+- **Solana HD Wallet**: Generate or import a BIP39 mnemonic and derive multiple Solana accounts.
+- **Account Management**: Add or remove accounts (derivation paths) on demand.
+- **Secure Storage**: Mnemonic and account indices are stored in browser localStorage only.
+- **Copy Address**: Easily copy public addresses to clipboard.
+- **Show/Hide Private Key**: Toggle visibility of private keys for each account.
+- **Dark/Light Theme**: Switch between dark and light modes.
+- **Responsive UI**: Clean, modern, and mobile-friendly interface.
+
+---
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router, TypeScript)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Solana Web3.js](https://solana-labs.github.io/solana-web3.js/)
+- [bip39](https://github.com/bitcoinjs/bip39) & [ed25519-hd-key](https://github.com/paulmillr/ed25519-hd-key)
+- [Radix UI](https://www.radix-ui.com/) (for accessible UI primitives)
+- [lucide-react](https://lucide.dev/) (icons)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+# Using Git
+https://github.com/your-username/webbasedwallet.git
+cd webbasedwallet
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+- **Generate Wallet**: Leave the mnemonic field empty and click "Generate Wallet" to create a new mnemonic phrase and first account.
+- **Import Wallet**: Paste an existing BIP39 mnemonic and click "Import Wallet".
+- **Add Account**: Click "Add Account" to derive a new Solana account from your mnemonic.
+- **Delete Account**: Remove any account except the first (index 0).
+- **Copy Address**: Click the copy icon next to an address.
+- **Show/Hide Private Key**: Toggle the eye icon to reveal or hide the private key.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Security & Privacy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Local-Only Storage**: All wallet data (mnemonic, account indices) is stored in your browser's localStorage. Nothing is ever sent to a server.
+- **No Backend**: This is a fully client-side application.
+- **Open Source**: Review the code for transparency and trust.
 
-## Deploy on Vercel
+**Warning:** Never use this wallet for large amounts or as your primary wallet. For production use, prefer audited and battle-tested wallets.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+This project is production-ready and can be deployed on [Vercel](https://vercel.com/) or any platform supporting Next.js.
+
+---
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## Acknowledgements
+
+- [Solana Labs](https://solana.com/)
+- [Next.js](https://nextjs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [lucide-react](https://lucide.dev/)
+
+---
+
+## Author
+
+- [Your Name](https://github.com/your-username)
+
+---
+
